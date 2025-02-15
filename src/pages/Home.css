@@ -1,0 +1,229 @@
+/* Ensure content starts below the fixed header */
+main {
+    margin-top: 40px; /* Retained original value for fixed header height */
+    font-family: Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f5f5f5;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 30px; /* Space below hero section */
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #002147;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.hero-content button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-content button:hover {
+    background-color: #0056b3;
+    color: black;
+}
+
+/* About Section */
+.about {
+    margin: 5px;
+    padding: 40px 20px;
+    background-image: linear-gradient(
+            rgba(255, 255, 255, 0.8), /* Transparent black overlay */
+            rgba(255, 255, 255, 0.3)
+    ),url("https://imgs.search.brave.com/c7HQ0VGspbFHH2bSf_HH1pP1zINhshfDBA7jrNYRLVE/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/dmVkYW50dS5jb20v/c2VvL2NvbnRlbnQt/aW1hZ2VzLzY3OTll/ZTAxLWIxMmQtNDhi/OC05NzVmLThhZDcy/ZWIyY2M1NV9jbGFz/c3Jvb21fOC5qcGc");
+    text-align: center;
+    background-size: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.about p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* About Section Grid Layout */
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal-width columns */
+    gap: 20px; /* Adds space between grid items */
+    margin-top: 20px;
+}
+
+.grid-item {
+    margin: 30px ;
+    margin-left: 60px;
+    margin-right: 60px;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.grid-item img {
+    max-width: 100%; /* Ensures images are responsive */
+    height: auto;
+    border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+/* Featured Courses Section */
+.featured-courses {
+    padding: 50px 20px;
+    background-image: url("https://imgs.search.brave.com/PD8KNnbXQytkXI_rpdBZ_OROQ-SfiIQfofAvdcYO390/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lMC5w/eGZ1ZWwuY29tL3dh/bGxwYXBlcnMvNjA5/LzY1Ny9kZXNrdG9w/LXdhbGxwYXBlci1n/aWFudC1saWJyYXJ5/LW5pZ2h0LWluLTIw/MjAtYm9vay1iYWNr/Z3JvdW5kLWJvb2st/Ym9va3MtbGlicmFy/eS1hZXN0aGV0aWMt/bGFwdG9wLXRodW1i/bmFpbC5qcGc");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+/* Overlay for transparency */
+.featured-courses::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black with 50% opacity for transparency */
+    z-index: 1; /* Ensures the overlay is below the text */
+}
+
+.featured-courses h2 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+    z-index: 2;
+    position: relative;
+}
+
+.courses-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+}
+
+.course-card {
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    color: black;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+
+.course-card h3 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.course-card p {
+    color: white;
+}
+
+/* News Section */
+.news {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+.news h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.news ul {
+    list-style-type: disc;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.news ul li {
+    font-size: 1.1rem;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* Utility Classes (optional) */
+.text-center {
+    text-align: center;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+/* Banner Section (just below the carousel) */
+.banner {
+    background-color: #002147;
+    padding: 10px 0;
+    margin-top: 200px; /* Retained original margin */
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-text {
+    display: flex;
+    gap: 30px;
+    white-space: nowrap;
+    animation: rollBanner 50s linear infinite;
+}
+
+.banner-text a {
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.banner-text a:hover {
+    color: #f9f9f9;
+}
+
+/* Keyframes for rolling effect */
+@keyframes rollBanner {
+    0% {
+        transform: translateX(100%); /* Start from right */
+    }
+    100% {
+        transform: translateX(-100%); /* End at left */
+    }
+}

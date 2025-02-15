@@ -1,0 +1,66 @@
+/* src/components/Header.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.custom-header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+    nav ul li {
+        margin-right: 20px;
+    }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+            nav ul li a:hover {
+                text-decoration: underline;
+            }
+
+.header-icons a {
+    color: white;
+    font-size: 24px;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+    .header-icons a:hover {
+        color: #f1c40f;
+    }

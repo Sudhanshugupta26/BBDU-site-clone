@@ -1,0 +1,46 @@
+/* src/components/RecruiterMarquee.css */
+
+.scroller__inner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.rfm-marquee-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    animation: scroll-left 17.94s linear infinite;
+}
+
+.rfm-marquee {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Adjust gap between logos */
+}
+
+.rfm-initial-child-container {
+    display: flex;
+    align-items: center;
+}
+
+.rfm-child {
+    display: inline-block;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+    .rfm-child img {
+        width: 100px; /* Adjust logo size */
+        height: auto;
+    }
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
